@@ -25,9 +25,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/swiper/swiper-bundle.min.css"
+
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/plugins.js",
+              "src/assets/js/theme.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -88,8 +93,46 @@
             ],
             "scripts": []
           }
+        },
+        "ionic-cordova-serve": {
+          "builder": "@ionic/angular-toolkit:cordova-serve",
+          "options": {
+            "cordovaBuildTarget": "SaarzInt:ionic-cordova-build",
+            "devServerTarget": "SaarzInt:serve"
+          },
+          "configurations": {
+            "production": {
+              "cordovaBuildTarget": "SaarzInt:ionic-cordova-build:production",
+              "devServerTarget": "SaarzInt:serve:production"
+            }
+          }
+        },
+        "ionic-cordova-build": {
+          "builder": "@ionic/angular-toolkit:cordova-build",
+          "options": {
+            "browserTarget": "SaarzInt:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "SaarzInt:build:production"
+            }
+          }
         }
       }
+    }
+  },
+  "cli": {
+    "analytics": false,
+    "schematicCollections": [
+      "@ionic/angular-toolkit"
+    ]
+  },
+  "schematics": {
+    "@ionic/angular-toolkit:component": {
+      "styleext": "scss"
+    },
+    "@ionic/angular-toolkit:page": {
+      "styleext": "scss"
     }
   }
 }

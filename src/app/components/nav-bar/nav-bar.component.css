@@ -1,0 +1,10 @@
+/* In your CSS file (e.g., styles.css) */
+.navbar.sticky-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.9); /* Adjust the background as needed */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

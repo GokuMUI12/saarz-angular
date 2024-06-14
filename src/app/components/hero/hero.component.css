@@ -1,0 +1,70 @@
+@keyframes slideInImage {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInImage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInClients {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInClients {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.image-slide-in {
+  animation: slideInImage 2s ease-in-out forwards;
+}
+
+.image-fade-in {
+  animation: fadeInImage 2s ease-in-out forwards;
+}
+
+.clients-slide-in {
+  animation: slideInClients 2s ease-in-out 1.5s backwards; 
+}
+
+.clients-fade-in {
+  animation: fadeInClients 2s ease-in-out 1.5s backwards; 
+}
+
+.gif-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.7; /* Adjust opacity as needed */
+}
+.card-container {
+  position: relative;
+  overflow: hidden;
+}
