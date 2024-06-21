@@ -1,3 +1,18 @@
 .bg-light-blue-gradient {
     background-image: linear-gradient(to bottom,  #3cdfff,  #3cdfff 55%);
 }
+
+.scrolling-wrapper {
+    display: flex;
+    animation: scroll 10s linear infinite;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(100%);
+    }
+  }
