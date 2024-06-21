@@ -1,5 +1,5 @@
-<header class="relative wrapper !bg-[#ffffff]  ">
-  <nav class="navbar navbar-expand-lg   navbar-light ">
+<header class="relative  py-[12px] !bg-[#fff]  ">
+  <nav class="navbar navbar-expand-lg ">
     <div class="container xl:flex-row lg:flex-row !flex-nowrap items-center">
       <div class="navbar-brand w-full">
         <a href="index.html">
@@ -13,20 +13,24 @@
         <div class="offcanvas-body xl:!ml-auto lg:!ml-auto flex flex-col !h-full">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link font-bold tracking-[-0.01rem] hover:!text-[#54a8c7] after:!text-[#54a8c7]"
+              <a class="nav-link font-bold tracking-[-0.01rem] hover:!text-[#54a8c7] hover:border-b-2 hover:border-[#54a8c7] py-2  focus:border-b-2 focus:border-[#54a8c7] focus:text-[#54a8c7]
+              after:!text-[#54a8c7]"
                 href="#">Home</a>
             </li>
          
             <li class="nav-item">
-              <a routerLink = '/portfolio' class="nav-link font-bold tracking-[-0.01rem] hover:!text-[#54a8c7] after:!text-[#54a8c7]" 
+              <a routerLink = '/portfolio' class="nav-link font-bold tracking-[-0.01rem] hover:border-[#54a8c7] py-2  focus:border-b-2 focus:border-[#54a8c7] focus:text-[#54a8c7]
+              hover:!text-[#54a8c7] hover:border-b-2 after:!text-[#54a8c7]" 
                 >Portfolio</a>
             </li>
             <li class="nav-item">
-              <a routerLink = '/contact-us' class="nav-link font-bold tracking-[-0.01rem] hover:!text-[#54a8c7] after:!text-[#54a8c7]"             
+              <a routerLink = '/contact-us' class="nav-link font-bold tracking-[-0.01rem] hover:border-[#54a8c7] hover:!text-[#54a8c7] hover:border-b-2  py-2 focus:border-b-2 focus:border-[#54a8c7] focus:text-[#54a8c7]
+              after:!text-[#54a8c7]"             
                 >Contact</a>
             </li>
             <li class="nav-item">
-              <a routerLink = '/careers' class="nav-link font-bold tracking-[-0.01rem] hover:!text-[#54a8c7] after:!text-[#54a8c7]" href="#"
+              <a routerLink = '/careers' class="nav-link font-bold tracking-[-0.01rem] hover:border-[#54a8c7] py-2  focus:border-b-2 focus:border-[#54a8c7] focus:text-[#54a8c7]
+ hover:!text-[#54a8c7] hover:border-b-2 after:!text-[#54a8c7]" href="#"
                 >Careers</a>
             </li>
           </ul>
@@ -37,8 +41,8 @@
          
           <li class="nav-item hidden xl:block lg:block md:block">
             <a href="#"
-              class="btn btn-sm btn-aqua text-white !bg-[#3cdfff] border-[#3cdfff] hover:text-white hover:bg-[#61F2F5] hover:border-[#54a8c7] focus:shadow-[rgba(79,152,181,1)] active:text-white active:bg-[#54a8c7] active:border-[#54a8c7] disabled:text-white disabled:bg-[#54a8c7] disabled:border-[#54a8c7] !rounded-[50rem]"
-              data-bs-toggle="modal" data-bs-target="#modal-signin">Sign In</a>
+              class="btn btn-sm btn-aqua text-white !bg-[#3cdfff] border-[#3cdfff] hover:text-white hover:bg-[#61F2F5]  focus:shadow-[#b1e6fb] active:text-white active:bg-[#54a8c7] active:border-[#54a8c7] "
+             >Get Free Consultation</a>
           </li>
           <li class="nav-item xl:hidden lg:hidden">
             <button class="hamburger offcanvas-nav-btn"><span></span></button>
@@ -48,64 +52,5 @@
       </div>
     </div>
   </nav>
-
-
-  <div class="modal fade !m-0 !p-0" id="modal-signin" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-sm">
-      <div class="modal-content !text-center">
-        <div class="relative flex-auto pt-[2.5rem] pr-[2.5rem] pb-[2.5rem] pl-[2.5rem]">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          <h2 class="mb-3 text-left !leading-[1.35]">Welcome Back</h2>
-          <p class="lead text-[0.9rem] font-medium !leading-[1.65] !mb-6 text-left">Fill your email and password to sign
-            in.</p>
-          <form class="text-left !mb-3">
-            <div class="form-floating relative !mb-4">
-              <input type="email"
-                class=" form-control  relative block w-full text-[.75rem] font-medium text-[#60697b] bg-[#fefefe] bg-clip-padding border shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] rounded-[0.4rem] border-solid border-[rgba(8,60,130,0.07)] transition-[border-color] duration-[0.15s] ease-in-out focus:text-[#60697b] focus:bg-[rgba(255,255,255,.03)] focus:shadow-[0_0_1.25rem_rgba(30,34,40,0.04),unset] focus:!border-[rgba(63,120,224,0.5)] focus-visible:!border-[rgba(63,120,224,0.5)] focus-visible:!outline-0 placeholder:text-[#959ca9] placeholder:opacity-100 m-0 !pr-9 p-[.6rem_1rem] h-[calc(2.5rem_+_2px)] min-h-[calc(2.5rem_+_2px)] leading-[1.25]"
-                placeholder="Email" id="loginEmail1">
-              <label for="loginEmail1"
-                class="text-[#959ca9] mb-2 inline-block text-[.75rem] absolute z-[2] h-full overflow-hidden text-start text-ellipsis whitespace-nowrap pointer-events-none border origin-[0_0] px-4 py-[0.6rem] border-solid border-transparent left-0 top-0 font-Manrope">Email</label>
-            </div>
-            <div class="form-floating relative password-field mb-4">
-              <input type="password"
-                class=" form-control  relative block w-full text-[.75rem] font-medium text-[#60697b] bg-[#fefefe] bg-clip-padding border shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] rounded-[0.4rem] border-solid border-[rgba(8,60,130,0.07)] transition-[border-color] duration-[0.15s] ease-in-out focus:text-[#60697b] focus:bg-[rgba(255,255,255,.03)] focus:shadow-[0_0_1.25rem_rgba(30,34,40,0.04),unset] focus:!border-[rgba(63,120,224,0.5)] focus-visible:!border-[rgba(63,120,224,0.5)] focus-visible:!outline-0 placeholder:text-[#959ca9] placeholder:opacity-100 m-0 !pr-9 p-[.6rem_1rem] h-[calc(2.5rem_+_2px)] min-h-[calc(2.5rem_+_2px)] leading-[1.25]"
-                placeholder="Password" id="loginPassword1">
-              <span
-                class="password-toggle absolute -translate-y-2/4 cursor-pointer text-[0.9rem] text-[#959ca9] right-3 top-2/4"><i
-                  class="uil uil-eye"></i></span>
-              <label for="loginPassword1"
-                class="text-[#959ca9] mb-2 inline-block text-[.75rem] absolute z-[2] h-full overflow-hidden text-start text-ellipsis whitespace-nowrap pointer-events-none border origin-[0_0] px-4 py-[0.6rem] border-solid border-transparent left-0 top-0 font-Manrope">Password</label>
-            </div>
-            <a
-              class="btn btn-aqua text-white !bg-[#54a8c7] border-[#54a8c7] hover:text-white hover:bg-[#54a8c7] hover:border-[#54a8c7] focus:shadow-[rgba(79,152,181,1)] focus:text-white active:text-white active:bg-[#54a8c7] active:border-[#54a8c7] disabled:text-white disabled:bg-[#54a8c7] disabled:border-[#54a8c7] !rounded-[50rem] btn-login w-full mb-2">Sign
-              In</a>
-          </form>
-          <!-- /form -->
-          <p class="!mb-1"><a href="#" class="hover text-[#54a8c7]">Forgot Password?</a></p>
-          <p class="!mb-0">Don't have an account? <a href="#" data-bs-target="#modal-signup" data-bs-toggle="modal"
-              data-bs-dismiss="modal" class="hover text-[#54a8c7]">Sign up</a></p>
-          <div class="divider-icon !my-4">or</div>
-          <nav class="nav social justify-center !text-center">
-            <a href="#"
-              class="btn btn-circle btn-sm btn-google !text-white !bg-[#e44134] !border-transparent !w-[1.8rem] !h-[1.8rem] !text-[0.8rem] !m-[0_.35rem] !inline-flex !items-center !justify-center !leading-none !p-0 !rounded-[100%]"><i
-                class="uil uil-google before:content-['\eb50']"></i></a>
-            <a href="#"
-              class="btn btn-circle btn-sm btn-facebook-f !text-white !bg-[#4470cf] !border-transparent !w-[1.8rem] !h-[1.8rem] !text-[0.8rem] !m-[0_.35rem] !inline-flex !items-center !justify-center !leading-none !p-0 !rounded-[100%]"><i
-                class="uil uil-facebook-f before:content-['\eae2']"></i></a>
-            <a href="#"
-              class="btn btn-circle btn-sm btn-twitter !text-white !bg-[#5daed5] !border-transparent !w-[1.8rem] !h-[1.8rem] !text-[0.8rem] !m-[0_.35rem] !inline-flex !items-center !justify-center !leading-none !p-0 !rounded-[100%]"><i
-                class="uil uil-twitter before:content-['\ed59']"></i></a>
-          </nav>
-          <!--/.social -->
-        </div>
-        <!--/.modal-content -->
-      </div>
-      <!--/.modal-body -->
-    </div>
-    <!--/.modal-dialog -->
-  </div>
-  <!--/.modal -->
-  
-  <!--/.modal -->
  
 </header>
